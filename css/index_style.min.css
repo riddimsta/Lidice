@@ -230,12 +230,32 @@ html, body {
     }
 }
 
+@media (min-width: 768px) {
+    .projects-section .featured-text {
+        padding: 0 0 0 2rem;
+        border-left: .5rem solid #abc825
+    }
+}
+
 .projects-section .project-text {
     padding: 3rem;
     font-size: 90%
 }
 
+
 @media (min-width: 992px) {
+    .projects-section .project-text {
+        padding: 2rem
+    }
+
+    .projects-section .project-text hr {
+        border-color: #abc825;
+        border-width: .25rem;
+        width: 30%
+    }
+}
+
+@media (min-width: 768px) {
     .projects-section .project-text {
         padding: 2rem
     }
@@ -354,15 +374,18 @@ footer {
     letter-spacing: .15em; /* Adjust as needed */
     animation: typing 8.5s steps(40, end),
     blink-caret .75s step-end infinite;
+    width: auto;
+    display: inline-block;
+    font-family: Tahoma;
 }
 
 /* The typing effect */
 @keyframes typing {
     from {
-        width: 0
+        max-width: 0
     }
     to {
-        width: 50%
+        max-width: 50%
     }
 }
 
@@ -372,7 +395,7 @@ footer {
         border-color: transparent
     }
     50% {
-        border-color: red;
+        border-color: #ffffff;
     }
 }
 
